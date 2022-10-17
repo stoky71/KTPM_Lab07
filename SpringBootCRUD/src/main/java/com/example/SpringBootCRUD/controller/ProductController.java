@@ -20,7 +20,7 @@ public class ProductController {
 	public ResponseEntity createProduct(@RequestBody Product product) {
 		return ResponseEntity.ok(productService.createProduct(product));
 	}
-	@PostMapping("/getlist")
+	@PostMapping("/get-list")
 	public ResponseEntity getList() {
 		return ResponseEntity.ok(productService.getListProducts());
 	}
